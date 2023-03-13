@@ -1,0 +1,84 @@
+:root{
+    --line-border-fill:#3498db;
+    --line-border-empty:#e0e0e0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    width: 350px;
+    text-align: center;
+}
+.content::before{
+    content: '';
+    background-color: var(--line-border-empty);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.circle{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+.garden{
+    color: #999;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--line-border-empty);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.garden.active{
+    border: 3px solid var(--line-border-fill);
+}
+.btn{
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    padding: 8px 30px;
+    background-color: var(--line-border-fill);
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+button.disabled,
+button.disabled{
+    background-color: var(--line-border-empty);
+}
