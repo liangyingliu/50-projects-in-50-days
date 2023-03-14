@@ -1,0 +1,44 @@
+{
+  "id": "3950483",
+  "name": "03-旋转菜单",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18170194",
+      "name": "信封,信息,消息",
+      "font_class": "envelope-full",
+      "unicode": "e982",
+      "unicode_decimal": 59778
+    },
+    {
+      "icon_id": "836663",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e73b",
+      "unicode_decimal": 59195
+    },
+    {
+      "icon_id": "982364",
+      "name": "关闭",
+      "font_class": "guanbi1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "1177011",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e752",
+      "unicode_decimal": 59218
+    },
+    {
+      "icon_id": "5013",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

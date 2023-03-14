@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: #333;
+}
+.content{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    position: relative;
+    transform-origin: top left;
+    background-color: white;
+    transition: all .5s ease-in;
+    transition-delay: 0s;
+}
+.content.active{
+    transform: rotate(-20deg);
+}
+.content.active .cricle{
+    transform: rotate(-60deg);
+}
+
+.article{
+    max-width: 1000px;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+.article img{
+    width: 1000px;
+}
+.article p{
+    margin: 16px 0;
+}
+.article h2{
+    margin: 18.72px 0;
+}
+.cricle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ff7979;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cricle .iconfont{
+    font-size: 30px;
+    color: white;
+}
+.cricle .icon-liebiao{
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+}
+.cricle .icon-guanbi1{
+    position: absolute;
+    bottom: 40px;
+    left: 45px;
+}
+.menu{
+    position: absolute;
+    left: -200px;
+    bottom: 500px;
+    height: 220px;
+    padding-left: 30px;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
+.menu .iconfont{
+    display: block;
+    margin: 40px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.menu .icon-user{
+    margin-left: 15px;
+}
+.menu .icon-envelope-full{
+    margin-left: 30px;
+}
